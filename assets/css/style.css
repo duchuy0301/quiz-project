@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;}
+
+/*Class*/
+
+.fa {
+    padding: 5px; 
+    font-size: 20 px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    text-align: left;
+    background: #3a589a;
+    color: white;
+  }
+  
+.fa-twitter {
+    text-align: left;
+    background: #20a8e4;
+    color: white;
+  }
+.header-img {
+  background-color:#3f495a;
+  height: 55px;
+}
+.img-gop {
+  background-color: #e6e6e6;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+h2 {
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+h6 {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.mini-project {
+  background-color: #e6e6e6;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+
+.main-page {
+  background-color: #3f495a;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.quiz {
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.selection {
+  display: flex;
+  margin-bottom: 10px;
+
+}
+.selection-img {
+  width:100%;
+}
+.selection-img.pen {
+  margin-right: 20px;
+}
+.selection-img.clock {
+  margin-left:20px;
+}
+
+.select-img {
+  width: 100%;
+  padding-bottom: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-img {
+  text-align: left;
+  justify-content: space-around;
+  color: #213875;
+  border: 1px solid #ccc;
+}
+.btn-img:hover {
+  background-color: #213875;
+  color:rgb(241, 247, 252)
+}
+.btn-img:focus {
+  background: #213875;
+  color: rgb(255, 255, 255);
+
+}
+.desc {
+  padding-left: 4px;
+  padding-top: 5px;
+}
+.input-img {
+  width: 100%;
+}
+
+.box-space {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.button-choice{
+  display: flex;
+}
+.btn-animal {
+  width: 100%;
+}
+.btn-animal.horse {
+  margin-right: 20px;
+}
+.btn-animal.cat {
+  margin-left: 20px;
+}
+.btn-choice {
+  width:100%;
+  height: 50px;
+  background: none;
+  border: 1px solid #e6e6e6;
+  color: #213875;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  border-top: 5px solid #d91f2e;
+  margin-bottom: 10px;
+}
+
+.btn-choice:hover {
+  background: none;
+  border: 1px solid #e6e6e6;
+  color: #ffffff;
+  font-size: 15px;
+  background: #213875;
+  border-radius: 3px;
+  cursor: pointer;
+  border-top: 5px solid #d91f2e;
+}
+
+
+.btn-choice-non-select {
+  width:100%;
+  height: 50px;
+  background: none;
+  border: 1px solid #e6e6e6;
+  font-size: 15px;
+  background: #ddddd;
+  border-radius: 3px;
+  cursor: pointer;
+  border-top: 5px solid #d91f2e;
+  margin-bottom: 10px;
+}
+
+
+
+.btn {
+  text-align: left;
+  background-color: #e6e6e6;
+  border-radius: 3px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 15px;
+  border-left: 10px solid #d91f2e;
+  color: #213875;
+}
+
+.btn:hover {
+  text-align: left;
+  background-color: #213875;
+  border-radius: 3px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 15px;
+  border-left: 10px solid #d91f2e;
+  color: #ffffff;
+}
+.btn:focus {
+  background: #213875;
+  color: white
+}
+
+.selected {
+  background: #213875!important;
+  color: white!important;
+}
+
+.message {
+  display: none;
+  padding: 10px 50px 10px 10px;
+  margin: 0px;
+
+}
+
+.imgP {
+  display: none;
+  width: 30%;
+  height: 20%;
+}
+
+.quiz-header {
+  padding-top: 20px;
+}
+
+#msgPre {
+  display: none;
+  border: 1px solid #ccc;
+  margin: 40px 0px 20px;
+}
+
+/*id*/
+#quiz-item {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+#quiz-animal{
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+#quiz-state {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+#share {
+  font-size: 12px;
+  margin: 10px 10px 5px 0px;
+}
+#sbButton {
+  background: #213875;
+  color: white;
+  justify-content: space-around;
+  border-radius: 3px;
+  font-size: 12px;
+}
+#reset {
+  background: #213875;
+  color: white;
+  justify-content: space-around;
+  border-radius: 3px;
+  font-size: 12px;
+}
+#user-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#fbButton {
+  margin-left: 0px;
+  padding-left: 5px;
+}
+#twButton {
+  margin-left: 7px;
+  padding-left: 5px;
+
+}
