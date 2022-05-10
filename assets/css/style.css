@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
 .fa {
     padding: 5px; 
     font-size: 20 px;
-    width: 100px;
+    width: 115px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -70,20 +70,16 @@ h6 {
 }
 
 .quiz {
-  padding: 10px 10px 10px 10px;
   background-color: rgb(255, 255, 255);
-  justify-content: center;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 .selection {
   display: flex;
   margin-bottom: 10px;
 
 }
-.selection-img {
+/* .selection-img {
   width:100%;
-}
+} */
 .selection-img.pen {
   margin-right: 20px;
 }
@@ -93,25 +89,42 @@ h6 {
 
 .select-img {
   width: 100%;
-  padding-bottom: 2px;
   background-color: rgb(255, 255, 255);
 }
 
 .btn-img {
-  text-align: left;
-  justify-content: space-around;
-  color: #213875;
   border: 1px solid #ccc;
 }
-.btn-img:hover {
+.form-check-input,.form-check-input[type=checkbox] {
+  border-radius: 0;
+  border: 2px solid #213875;
+  cursor: pointer;
+}
+.h-check-box {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.h-check-box:hover {
   background-color: #213875;
-  color:rgb(241, 247, 252)
+  color: #ffffff;
 }
-.btn-img:focus {
-  background: #213875;
-  color: rgb(255, 255, 255);
+.h-check-box:hover .form-check .form-check-input {
+  background-color: #213875;
+  border-color: #ffffff;
+}
+.h-checked {
+  background-color: #213875;
+  color: #ffffff;
+}
+.h-checked .form-check .form-check-input {
+  border-color: #ffffff;
+}
+.h-checked .form-check .form-check-input:checked {
+  background-color: #213875;
+}
 
-}
+
+
 .desc {
   padding-left: 4px;
   padding-top: 5px;
@@ -120,13 +133,9 @@ h6 {
   width: 100%;
 }
 
-.box-space {
-  margin-left: 5px;
-  margin-right: 10px;
-}
-.button-choice{
+/* .button-choice{
   display: flex;
-}
+} */
 .btn-animal {
   width: 100%;
 }
@@ -176,7 +185,7 @@ h6 {
 
 
 
-.btn {
+.h-option {
   text-align: left;
   background-color: #e6e6e6;
   border-radius: 3px;
@@ -187,7 +196,7 @@ h6 {
   color: #213875;
 }
 
-.btn:hover {
+.h-option:hover {
   text-align: left;
   background-color: #213875;
   border-radius: 3px;
@@ -197,7 +206,7 @@ h6 {
   border-left: 10px solid #d91f2e;
   color: #ffffff;
 }
-.btn:focus {
+.h-option:focus {
   background: #213875;
   color: white
 }
@@ -208,43 +217,20 @@ h6 {
 }
 
 .message {
-  display: none;
   padding: 10px 50px 10px 10px;
   margin: 0px;
-
-}
-
-.imgP {
-  display: none;
-  width: 30%;
-  height: 20%;
+  font-size: 16px;
 }
 
 .quiz-header {
-  padding-top: 20px;
+  padding-top: 3rem;
+  font-size: 20px;
 }
 
-#msgPre {
+#msg1,#msg2,#msg3,#msg4,#msg5,#msg6,#msg7 {
   display: none;
   border: 1px solid #ccc;
-  margin: 40px 0px 20px;
-}
-
-/*id*/
-#quiz-item {
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
-}
-#quiz-animal{
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
-}
-#quiz-state {
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
+  margin: 3rem auto;
 }
 #share {
   font-size: 12px;
@@ -257,16 +243,18 @@ h6 {
   border-radius: 3px;
   font-size: 12px;
 }
-#reset {
-  background: #213875;
+#reload {
+  background: #d71f2d;
   color: white;
-  justify-content: space-around;
-  border-radius: 3px;
-  font-size: 12px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#reload-btn {
+  text-align: center;
 }
 #user-name {
-  margin-top: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #fbButton {

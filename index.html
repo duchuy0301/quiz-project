@@ -21,59 +21,68 @@
         <h2>Which Republican President Are You?</h2>
         <h6>Take the Quiz and Share your Results</h6>
       
-      <div class = "quiz">
+      <div class = "quiz container py-2">
         <p id='user-name'></p>
         <p id="share">SHARE YOUR RESULT</p>
         <div class="yourScore">
-          <a href="#" id='fbButton' class="fa fa-facebook"></a>
-          <a href="#" id='twButton' class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com" id='fbButton' class="fa fa-facebook" target="_blank"></a>
+          <a href="https://www.twitter.com" id='twButton' class="fa fa-twitter" target="_blank"></a>
       </div>
             <div class="quiz-header">
               <p id = "quiz-item">Question 1: Choose item</p>
             </div>
-            <div class="selection">
-              <div class="selection-img pen">
+            <div class="selection row justify-content-between">
+              <div class="question1 col-4">
                   <div class= "btn-img">
-                    <label class = "input-img" >
                     <img class="select-img"  src="./assets/images/question1/pen.jpg"></img>
-                    <input class = "box-space"  type="checkbox" name="check" onclick="oneItem(this)" value = "1"> Pen
-                    </label>
+                  </div>
+                  <div class="h-check-box p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="1" id="pen" name="items">
+                      <label class="form-check-label" for="items">Pen</label>
+                    </div>
                   </div>
               </div>
-              <div class="selection-img">
+              <div class="col-4">
                     <div class= "btn-img">
-                      <label class = "input-img">
                       <img class="select-img" src="./assets/images/question1/was-seal.jpg"></img>
-                      <input class = "box-space" type="checkbox" name="check" onclick="oneItem(this)" value = "2" > Wax Seal
-                      </label>
+                    </div>
+                    <div class="h-check-box p-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2" id="wax" name="items">
+                        <label class="form-check-label" for="items">Wax Seal</label>
+                      </div>
                     </div>
               </div>
-              <div class="selection-img clock">
+              <div class="col-4">
                     <div class= "btn-img">
-                      <label class = "input-img">
                       <img class="select-img" src="./assets/images/question1/clock.jpg"></img>
-                      <input class = "box-space" type="checkbox" name="check" onclick="oneItem(this)" value = "3"> Table Clock
-                      </label>
+                    </div>
+                    <div class="h-check-box p-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="3" id="clock" name="items">
+                        <label class="form-check-label" for="items">Table Clock</label>
+                      </div>
                     </div>
               </div>
             </div>
             <div class="quiz-header">
               <p id = "quiz-animal">Question 2: Choose a pet animal</p>
             </div>
-            <div class="button-choice">
-              <div class = "btn-animal horse">
+            <div class="row justify-content-between">
+              <div class = "col-4">
               <button class= "btn-choice"  id="answerBtn1"  onClick="oneAnimal(this)" value="1">
-                HORSE 
+                Tiger 
               </button>
               </div>
-              <div class = "btn-animal">
+              <div class = "col-4">
               <button class= "btn-choice" id="answerBtn2" onClick="oneAnimal(this)" value="2">
-                DOG 
+                Lion 
               </button>
             </div>
-            <div class = "btn-animal cat">
+            <div class = "col-4">
               <button class= "btn-choice" id="answerBtn3" onClick="oneAnimal(this)" value="3">
-                CAT 
+                Wolf 
               </button>
             </div>
               
@@ -83,122 +92,126 @@
               <p id = "quiz-state">Question 3: Choose a state</p>
             </div>
             <div class="choose-one">
-              <button class= "btn" id="ansBt1" onClick="oneState(this)" value="1">
+              <button class= "btn h-option" id="ansBt1" onClick="oneState(this)" value="1">
                 NEW YORK 
               </button>
-              <button class= "btn" id="ansBt2" onClick="oneState(this)" value="2">
+              <button class= "btn h-option" id="ansBt2" onClick="oneState(this)" value="2">
                 NEBRASKA 
               </button>
-              <button class= "btn" id="ansBt3" onClick="oneState(this)" value="3">
+              <button class= "btn h-option" id="ansBt3" onClick="oneState(this)" value="3">
                 KENTUCKY 
               </button>
             </div>
 
-            <div id = "msgPre">
-            <div>
-              <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT ABRAHAM LINCOLN</p>
-              <p class="message" id = "msg1"> 
-                
-                Abraham Lincoln (February 12, 1809 – April 15, 1865) was an American lawyer and 
-                statesman who served as the 16th president of the United States from 1861 until his assassination
-                in 1865. Lincoln led the nation through the American Civil War, the country
-                s greatest moral, cultural, constitutional, and political crisis. He succeeded in preserving 
-                the Union, abolishing slavery, bolstering the federal government, and modernizing the U.S. economy.
-              </p>
-            </div>
-              <img class = "imgP" id = "img1" src="./assets/images/presidents/3-lincoln.jpg"></img>
-            </div>
-			
-            <div id = "msgPre">
-			<div>
-			  <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT THEODORE ROOSEVELT JR.</p>
-              <p class="message" id = "msg2"> 
-			  
-			    Theodore Roosevelt Jr. (October 27, 1858 – January 6, 1919), often 
-                referred to as Teddy or his initials T. R., was an American statesman, conservationist, naturalist, 
-                historian, and writer, who served as the 26th president of the United States from 1901 to 1909. He 
-                previously served as the 33rd governor of New York from 1899 to 1900 and the 25th vice president of 
-                the United States from March to September 1901. Roosevelt emerged as a leader of the Republican Party 
-                and became a driving force for anti-trust and Progressive policies.
-              </p>
-			</div>
-              <img class = "imgP" id = "img2" src="./assets/images/presidents/4-roosevelt.jpg"></img>
-			</div>
-			
-            <div id = "msgPre">
-            <div >
-			  <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT DWIGHT DAVID EISENHOWER</p>
-              <p class="message" id = "msg3"> 
-			  
-			    Dwight David "Ike" Eisenhower (October 14, 1890 – March 28, 1969) was an American 
-                military officer and statesman who served as the 34th president of the United States from 1953 to 1961. During 
-                World War II, he served as Supreme Commander of the Allied Expeditionary Force in Europe, and achieved the rare 
-                five-star rank of General of the Army. He was responsible for planning and supervising the invasion of North 
-                Africa in Operation Torch in 1942–1943 and the successful invasion of Normandy in 1944–1945 from the Western Front.
-              </p>
-			</div>
-              <img class = "imgP" id = "img3" src="./assets/images/presidents/5-eisenhower.jpg"></img>
+            <div class = "row justify-content-between" id = "msg1">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT ABRAHAM LINCOLN</p>
+                <p class="message">Abraham Lincoln (February 12, 1809 – April 15, 1865) was an American lawyer and 
+                  statesman who served as the 16th president of the United States from 1861 until his assassination
+                  in 1865. Lincoln led the nation through the American Civil War, the country
+                  s greatest moral, cultural, constitutional, and political crisis. He succeeded in preserving 
+                  the Union, abolishing slavery, bolstering the federal government, and modernizing the U.S. economy.</p>
+              </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/3-lincoln.jpg"></img>
+              </div>
             </div>
 			
-            <div id = "msgPre">
-			<div>
-			  <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT RONALD WILSON REAGAN</p>
-              <p class="message" id = "msg4"> Ronald Wilson Reagan (February 6, 1911 – June 5, 2004) was an American politician 
+            <div class = "row justify-content-between" id = "msg2">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT THEODORE ROOSEVELT JR.</p>
+                <p class="message">Theodore Roosevelt Jr. (October 27, 1858 – January 6, 1919), often 
+                  referred to as Teddy or his initials T. R., was an American statesman, conservationist, naturalist, 
+                  historian, and writer, who served as the 26th president of the United States from 1901 to 1909. He 
+                  previously served as the 33rd governor of New York from 1899 to 1900 and the 25th vice president of 
+                  the United States from March to September 1901. Roosevelt emerged as a leader of the Republican Party 
+                  and became a driving force for anti-trust and Progressive policies.</p>
+              </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/4-roosevelt.jpg"></img>
+              </div>
+            </div>
+			
+            <div class = "row justify-content-between" id = "msg3">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT DWIGHT DAVID EISENHOWER</p>
+                <p class="message">Dwight David "Ike" Eisenhower (October 14, 1890 – March 28, 1969) was an American 
+                  military officer and statesman who served as the 34th president of the United States from 1953 to 1961. During 
+                  World War II, he served as Supreme Commander of the Allied Expeditionary Force in Europe, and achieved the rare 
+                  five-star rank of General of the Army. He was responsible for planning and supervising the invasion of North 
+                  Africa in Operation Torch in 1942–1943 and the successful invasion of Normandy in 1944–1945 from the Western Front.</p>
+			        </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/5-eisenhower.jpg"></img>
+              </div>
+            </div>
+			
+            <div class = "row justify-content-between" id = "msg4">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT RONALD WILSON REAGAN</p>
+                <p class="message"> Ronald Wilson Reagan (February 6, 1911 – June 5, 2004) was an American politician 
                 who served as the 40th president of the United States from 1981 to 1989 and became a highly influential voice of 
                 modern conservatism. Prior to his presidency, he was a Hollywood movie actor and union leader before serving as 
-                the 33rd governor of California from 1967 to 1975.
-              </p>
-			</div>
-              <img class = "imgP" id = "img4" src="./assets/images/presidents/6-reagan.jpg"></img>
+                the 33rd governor of California from 1967 to 1975.</p>
+			        </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/6-reagan.jpg"></img>
+              </div>
             </div>
 			
-            <div id = "msgPre">
-			<div>
-              <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT GEORGE HERBERT WALKER BUSH</p>
-			  <p class="message" id = "msg5"> George Herbert Walker Bush (June 12, 1924 ber 30, 2018) was a– Novemn American 
+            <div class = "row justify-content-between" id = "msg5">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT GEORGE HERBERT WALKER BUSH</p>
+			          <p class="message"> George Herbert Walker Bush (June 12, 1924 ber 30, 2018) was a– Novemn American 
                 politician, diplomat, and businessman who served as the 41st president of the United States from 1989 to 1993. 
                 A member of the Republican Party, Bush also served as the 43rd vice president from 1981 to 1989 under Ronald 
                 Reagan, in the U.S. House of Representatives, as U.S. Ambassador to the United Nations, and as Director of Central 
-                Intelligence.
-              </p>
-			</div>
-              <img class = "imgP" id = "img5" src="./assets/images/presidents/7-hw-bush.jpg"></img>
+                Intelligence.</p>
+			        </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/7-hw-bush.jpg"></img>
+              </div>
             </div>
 			
-            <div id = "msgPre">
-			<div>
-              <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT GEORGE WALKER BUSH</p>
-			  <p class="message" id = "msg6"> George Walker Bush (born July 6, 1946) is an American politician and businessman who 
+            <div class = "row justify-content-between" id = "msg6">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT GEORGE WALKER BUSH</p>
+			          <p class="message"> George Walker Bush (born July 6, 1946) is an American politician and businessman who 
                 served as the 43rd president of the United States from 2001 to 2009. A member of the Republican Party, Bush 
                 previously served as the 46th governor of Texas from 1995 to 2000. He was born into the Bush family; his father, 
-                George H. W. Bush, was the 41st president of the United States from 1989 to 1993.
-              </p>
-			</div>
-              <img class = "imgP" id = "img6" src="./assets/images/presidents/8-w-bush.jpg"></img>
+                George H. W. Bush, was the 41st president of the United States from 1989 to 1993.</p>
+			        </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/8-w-bush.jpg"></img>
+              </div>
             </div>
 			
-            <div id = "msgPre">
-			<div>
-              <p class="message">Which Republican are you?</p>
-              <p class="message">YOU GOT DONALD JOHN TRUMP</p>
-			  <p class="message" id = "msg7"> Donald John Trump (born June 14, 1946) is an American media personality and 
-                businessman who served as the 45th president of the United States from 2017 to 2021.
-              </p>
-			</div>
-              <img class = "imgP" id = "img7" src="./assets/images/presidents/9-trump.jpg"></img>
+            <div class = "row justify-content-between" id = "msg7">
+              <div class="col-sm-6 col-md-9 p-0">
+                <p class="message">Which Republican are you?</p>
+                <p class="fw-bold message">YOU GOT DONALD JOHN TRUMP</p>
+			          <p class="message"> Donald John Trump (born June 14, 1946) is an American media personality and 
+                businessman who served as the 45th president of the United States from 2017 to 2021.</p>
+			        </div>
+              <div class="col-6 col-md-3 p-0">
+                <img class = "img-fluid" src="./assets/images/presidents/9-trump.jpg"></img>
+              </div>
             </div>
-			
+            <div class="mt-3" id="reload-btn">
+              <button type="button" id="reload" class="btn btn-sm">Reload</button>
+            </div>
           </div>
         </div>
       </div>
   </section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="./assets/js/app.js"></script>
   </body>
 </html>
